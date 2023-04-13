@@ -2,7 +2,7 @@
 
 export default {
   components: {
-
+    name: "AppInfo",
   },
   data() {
     return {
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-
+    <h2>Io sono Info</h2>
 </template>
 
 <style lang="scss">

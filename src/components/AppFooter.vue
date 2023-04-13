@@ -2,7 +2,7 @@
 
 export default {
   components: {
-
+    name: "AppFooter",
   },
   data() {
     return {
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-
+    <h2>Io sono Footer</h2>
 </template>
 
 <style lang="scss">

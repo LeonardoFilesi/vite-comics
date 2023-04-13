@@ -2,7 +2,7 @@
 
 export default {
   components: {
-
+    name: "AppNavbar",
   },
   data() {
     return {
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-
+    <h2>Io sono Navbar</h2>
 </template>
 
 <style lang="scss">
