@@ -41,6 +41,7 @@ export default {
 
 ul {
     list-style-type: none;
+    align-items: center;
 }
 
 li {

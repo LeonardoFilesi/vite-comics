@@ -6,16 +6,34 @@ export default {
   },
   data() {
     return {
-
+      UtilitiesLogos: [
+        {image: "buy-comics-digital-comics.png", paragr:"DIGITAL COMICS"},
+        {image: "buy-comics-merchandise.png", paragr:"DC MERCHANDISE"},
+        {image:"buy-comics-subscriptions.png", paragr:"SUBSCRIPTION"},
+        {image:"buy-dc-power-visa.svg", paragr:"SUBSCRIPTION"},
+      ]
     }
   }
 }
 </script>
 
 <template>
-    <h2>Io sono Navbar</h2>
+  <div class="ms_container">
+    <div v-for="(item, index) in UtilitiesLogos">
+      <img :src="`../assets/${UtilitiesLogos.image}`" alt="">
+      <p>{{ UtilitiesLogos.paragr }}</p>
+    </div>
+  </div>
+    
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .ms_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3% 10%;
+  background-color: #157cea;
+  color: white;
+}
 
 </style>
