@@ -14,9 +14,9 @@ export default {
       ]
     }
   },
-  methods: { 
+/*   methods: { 
     getImagePathBy
-  },
+  }, */
 }
 </script>
 
