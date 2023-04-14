@@ -6,7 +6,7 @@ export default {
   },
   data() {
     return {
-        headerNav: [
+        links: [
                 {text: "CHARACTERS"}, { text: `COMICS`}, {text: `MOVIES`}, {text: `TV`}, {text: `GAMES`}, {text: `COLLECTIBLES`}, {text: `VIDEOS`}, {text: `FANS`}, {text: `NEWS`}, {text: `SHOP`},
         ]
     }
@@ -18,8 +18,8 @@ export default {
         <div class="ms_container flex">
             <div class="logoContainer"><img src="../assets/dc-logo.png" alt=""></div>
             <ul class="flex">
-                <li v-for="item in headerNav">
-                    {{ item.text }}
+                <li v-for="link in links">
+                    {{ link.text }}
                 </li>
             </ul>
         </div>

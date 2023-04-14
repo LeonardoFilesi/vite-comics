@@ -1,0 +1,12 @@
+@mixin flex($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+  
+@mixin ms_container($height,$margin,$width:1000px) {
+  height: $height;
+  margin: $margin;
+  max-width: $width;
+}

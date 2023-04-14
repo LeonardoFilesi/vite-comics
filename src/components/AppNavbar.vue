@@ -10,10 +10,13 @@ export default {
         {image: "buy-comics-digital-comics.png", paragr:"DIGITAL COMICS"},
         {image: "buy-comics-merchandise.png", paragr:"DC MERCHANDISE"},
         {image:"buy-comics-subscriptions.png", paragr:"SUBSCRIPTION"},
-        {image:"buy-dc-power-visa.svg", paragr:"SUBSCRIPTION"},
+        {image:"buy-dc-power-visa.svg", paragr:"DC POWER VISA"},
       ]
     }
-  }
+  },
+  methods: { 
+    getImagePathBy
+  },
 }
 </script>
 
