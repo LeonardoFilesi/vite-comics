@@ -1,13 +1,13 @@
 <script>
-import AppLocandine from "./AppLocandine.vue";
+/* import AppThumbs from "./AppLocandine.vue"; */
 export default {
     name: "AppContent",
     components: {
-        AppLocandine
+        AppThumbs
     },
     data() {
         return {
-            locandine: [
+            Tumbs: [
                 {
                     thumb: 'https://www.coverbrowser.com/image/action-comics/1-1.jpg',
                     price: '$19.99',
@@ -89,12 +89,12 @@ export default {
 <template>
     <div class="wrapper-content">
         <section class="jumbotron">
-            <img src="../assets/img/jumbotron.jpg" alt="">
+            <img src="../assets/jumbotron.jpg" alt="">
         </section>
         <section class="locandine">
             <h3 class="title">CURRENT SERIES</h3>
-            <AppLocandine v-for="(elemento, index) in locandine" :key="index" :immagine="elemento.thumb"
-                :prezzo="elemento.price" :tipo="elemento.series" />
+            <AppLocandine v-for="(element, index) in Thumbs" :key="index" :immagine="element.thumb"
+                :prezzo="element.price" :tipo="element.series" />
             <button>LOAD MORE</button>
         </section>
     </div>
